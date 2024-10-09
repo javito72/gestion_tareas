@@ -1,0 +1,28 @@
+//- views/usuarios/listar.pug
+
+extends ../index
+
+block content
+    h2 Lista de Usuarios
+    a.btn.btn-crear-usuario(href='/usuarios/crear') Crear Nuevo Usuario
+    table(border='1')
+        thead
+            tr
+                th ID
+                th Nombre
+                th Email
+                th Rol
+                th Departamento
+                th Acciones
+        tbody
+            each usuario in usuarios
+                tr
+                    td= usuario.id
+                    td= usuario.nombre
+                    td= usuario.email
+                    td= usuario.rol
+                    td= usuario.departamento
+                    td
+                        a.btn.btn-editar(href=`/usuarios/editar/${usuario.id}`) Editar
+                        form(action=`/usuarios/eliminar/${usuario.id}`, method='POST', style='display:inline')
+                            button(type='submit', onclick='return confirm("¿Estás seguro de eliminar este usuario?")') Eliminar

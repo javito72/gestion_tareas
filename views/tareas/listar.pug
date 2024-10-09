@@ -1,0 +1,37 @@
+//- views/tareas/listar.pug
+
+extends ../index
+
+block content
+    h2 Lista de Tareas
+    a.btn.btn-crear-tarea(href='/tareas/crear') Crear Nueva Tarea
+    table
+        thead
+            tr
+                th Área
+                th ID
+                th Título
+                th Descripción
+                th Estado
+                th Prioridad
+                th Usuario Asignado
+                th Fecha de Creación
+                th Fecha de Vencimiento
+                th Acciones
+        tbody
+            each tarea in tareas
+                tr
+                    // Mostrar 'Área' en la primera columna
+                    td= tarea.area.charAt(0).toUpperCase() + tarea.area.slice(1)
+                    td= tarea.id
+                    td= tarea.titulo
+                    td= tarea.descripcion
+                    td= (estados.find(e => e.id === tarea.estado)).nombre    
+                    td= (prioridades.find(p => p.id === tarea.prioridad)).nombre
+                    td= (usuarios.find(u => u.id === tarea.usuarioAsignado)).nombre
+                    td= new Date(tarea.fechaCreacion).toLocaleString()
+                    td= new Date(tarea.fechaVencimiento).toLocaleDateString()
+                    td
+                        a.btn.btn-editar(href=`/tareas/editar/${tarea.id}`) Editar
+                        form(action=`/tareas/eliminar/${tarea.id}`, method='POST', style='display:inline')
+                            button(type='submit') Eliminar

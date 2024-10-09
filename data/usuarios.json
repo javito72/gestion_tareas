@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "nombre": "Administrador",
+    "email": "admin@empresa.com",
+    "rol": "administrador",
+    "departamento": "Administración"
+  },
+  {
+    "id": 2,
+    "nombre": "Elias Rodriguez",
+    "email": "erodri@gmail.com",
+    "rol": "empleado",
+    "departamento": "Administracion"
+  },
+  {
+    "id": 3,
+    "nombre": "Beto Márcico",
+    "email": "betom@gmail.com",
+    "rol": "empleado",
+    "departamento": "Contaduría 1"
+  },
+  {
+    "id": 4,
+    "nombre": "Richard Gasquet",
+    "email": "richardg@gmail.com",
+    "rol": "empleado",
+    "departamento": "Recursos Humanos"
+  }
+]

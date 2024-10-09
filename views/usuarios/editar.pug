@@ -1,0 +1,27 @@
+//- views/usuarios/editar.pug
+
+extends ../index
+
+block content
+    h2 Editar Usuario
+    form(action=`/usuarios/editar/${usuario.id}`, method='POST')
+        div
+            label(for='nombre') Nombre:
+            input(type='text', name='nombre', id='nombre', value=usuario.nombre, required=true)
+        div
+            label(for='email') Email:
+            input(type='email', name='email', id='email', value=usuario.email, required=true)
+        div
+            label(for='rol') Rol:
+            select(name='rol', id='rol', required=true)
+                if usuario.rol === 'empleado'
+                    option(value='empleado', selected=true) Empleado
+                    option(value='administrador') Administrador
+                else
+                    option(value='empleado') Empleado
+                    option(value='administrador', selected=true) Administrador
+        div
+            label(for='departamento') Departamento:
+            input(type='text', name='departamento', id='departamento', value=usuario.departamento, required=true)
+        div
+            button(type='submit') Actualizar Usuario

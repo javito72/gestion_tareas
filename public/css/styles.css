@@ -1,0 +1,260 @@
+/* public/css/styles.css */
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f9f9f9;
+}
+
+/* Estilos para el contenedor principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+/* Encabezados */
+h1 {
+    font-size: 2.5rem;
+}
+
+h1, h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Enlaces y botones */
+a {
+    text-decoration: none;
+    color: #007BFF;
+    margin-right: 10px;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 7px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Formularios */
+form div {
+    margin-bottom: 15px;
+    width: 50%;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+/* Tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Mensajes de error */
+.error {
+    color: red;
+    margin-bottom: 15px;
+}
+
+/* Botones en la tabla */
+td form button {
+    background-color: #dc3545;
+}
+
+td form button:hover {
+    background-color: #c82333;
+}
+
+/* Espaciado en navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+nav li {
+    display: inline;
+    margin-right: 15px;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    th, td {
+        padding: 8px 10px;
+    }
+
+    button, a {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+}
+
+/* Estilos Generales para Botones */
+.btn {
+    display: inline-block;
+    padding: 0.4rem 1rem;
+    font-size: 1rem;
+    color: white;
+    background-color: #28a745; /* Verde por defecto */
+    border: none;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0.2rem; /* Espacio entre botones */
+}
+
+/* Botones Específicos */
+.btn-tareas {
+    background-color: #28a745; /* Verde */
+    display: inline-block;
+    padding: .75rem .75rem; /* Aumenta el espacio interno (doble) */
+    font-size: 2rem; /* Aumenta el tamaño de fuente (doble) */
+    margin: 1rem; /* Agrega margen para espaciar los botones */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    transition: background-color 0.3s; /* Transición suave para el cambio de color */
+}
+
+.btn-tareas:hover {
+    background-color: #218838; /* Verde Oscuro */
+}
+
+.btn-usuarios {
+    background-color: #007bff; /* Azul */
+    display: inline-block;
+    padding: .75rem .75rem; /* Aumenta el espacio interno (doble) */
+    font-size: 2rem; /* Aumenta el tamaño de fuente (doble) */
+    margin: 1rem; /* Agrega margen para espaciar los botones */
+    background-color: #007BFF; /* Color de fondo azul */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    transition: background-color 0.3s; /* Transición suave para el cambio de color */
+}
+
+.btn-usuarios:hover {
+    background-color: #0069d9; /* Azul Oscuro */
+}
+
+.btn-crear-tarea {
+    background-color: #28a745; /* Verde */
+}
+
+.btn-crear-tarea:hover {
+    background-color: #218838; /* Verde Oscuro */
+}
+
+.btn-crear-usuario {
+    background-color: #007bff; /* Azul */
+}
+
+.btn-crear-usuario:hover {
+    background-color: #0069d9; /* Azul Oscuro */
+}
+
+.btn-editar {
+    background-color: #007bff; /* Azul */
+}
+
+.btn-editar:hover {
+    background-color: #0069d9; /* Azul Oscuro */
+}
+
+.btn-limpiar {
+    background-color: #6c757d; /* Gris */
+}
+
+.btn-limpiar:hover {
+    background-color: #5a6268; /* Gris Oscuro */
+}
+
+.btn-eliminar {
+    background-color: #dc3545; /* Rojo */
+}
+
+.btn-eliminar:hover {
+    background-color: #c82333; /* Rojo Oscuro */
+}
+
+.btn-logout {
+    background-color: #ffc107; /* Amarillo */
+    color: black; /* Contraste para el texto */
+}
+
+.btn-logout:hover {
+    background-color: #e0a800; /* Amarillo Oscuro */
+}
+
+.btn-login {
+    background-color: #6c757d; /* Gris */
+}
+
+.btn-login:hover {
+    background-color: #5a6268; /* Gris Oscuro */
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    th, td {
+        padding: 8px 10px;
+    }
+
+    button, a {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+}

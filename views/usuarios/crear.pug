@@ -1,0 +1,23 @@
+//- views/usuarios/crear.pug
+
+extends ../index
+
+block content
+    h2 Crear Nuevo Usuario
+    form(action='/usuarios/crear', method='POST')
+        div
+            label(for='nombre') Nombre:
+            input(type='text', name='nombre', id='nombre', required=true)
+        div
+            label(for='email') Email:
+            input(type='email', name='email', id='email', required=true)
+        div
+            label(for='rol') Rol:
+            select(name='rol', id='rol', required=true)
+                option(value='empleado') Empleado
+                option(value='administrador') Administrador
+        div
+            label(for='departamento') Departamento:
+            input(type='text', name='departamento', id='departamento', required=true)
+        div
+            button(type='submit') Crear Usuario

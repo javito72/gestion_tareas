@@ -1,0 +1,22 @@
+//- views/index.pug
+
+doctype html
+html
+    head
+        title= title
+        link(rel='stylesheet', href='/css/styles.css')
+    body
+        .container
+            h1 Sistema de Gestión de Tareas
+            if usuario
+                p Bienvenido, #{usuario.nombre} | 
+                    a.btn.btn-logout(href='/auth/logout') Cerrar Sesión
+                nav
+                    ul
+                        li: a.btn.btn-tareas(href='/tareas') Tareas
+                        li: a.btn.btn-usuarios(href='/usuarios') Usuarios
+            else
+                nav
+                    ul
+                        li: a.btn.btn-login(href='/auth/login') Iniciar Sesión
+            block content

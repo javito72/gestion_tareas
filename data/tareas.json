@@ -1,0 +1,57 @@
+[
+  {
+    "area": "compras",
+    "id": 1,
+    "titulo": "Subir el proyecto a GitHub",
+    "descripcion": "Repasar GitHub para realizar la tarea. \r\nOrganizar el panorama actual del equipo",
+    "estado": 2,
+    "prioridad": 1,
+    "usuarioAsignado": 1,
+    "fechaCreacion": "2024-10-07T05:44:30.965Z",
+    "fechaVencimiento": "2024-10-07"
+  },
+  {
+    "area": "inventario",
+    "id": 2,
+    "titulo": "inventariar lapiceras",
+    "descripcion": "Contar cuántas lapiceras tengo",
+    "estado": 1,
+    "prioridad": 1,
+    "usuarioAsignado": 2,
+    "fechaCreacion": "2024-10-07T06:12:37.548Z",
+    "fechaVencimiento": "2024-10-08"
+  },
+  {
+    "id": 3,
+    "titulo": "inventariar lapiceras",
+    "descripcion": "Listar cantidad de lapiceras",
+    "estado": 2,
+    "prioridad": 1,
+    "usuarioAsignado": 2,
+    "fechaCreacion": "2024-10-07T15:28:36.661Z",
+    "fechaVencimiento": "2024-10-24",
+    "area": "ventas"
+  },
+  {
+    "id": 4,
+    "titulo": "Producción de lapiceras",
+    "descripcion": "Comenzar con la producción de lapiceras",
+    "estado": 1,
+    "prioridad": 2,
+    "usuarioAsignado": 2,
+    "fechaCreacion": "2024-10-07T15:31:30.756Z",
+    "fechaVencimiento": "2024-10-18",
+    "area": "producción"
+  },
+  {
+    "id": 5,
+    "titulo": "papel",
+    "descripcion": "10 Resmas A4",
+    "estado": 1,
+    "prioridad": 1,
+    "usuarioAsignado": 2,
+    "fechaCreacion": "2024-10-08T18:58:13.692Z",
+    "fechaVencimiento": "2024-10-20",
+    "area": "compras"
+  }
+]
